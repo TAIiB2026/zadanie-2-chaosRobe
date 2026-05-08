@@ -4,7 +4,6 @@
   <p><strong>ID:</strong> {{ sok.id }}</p>
   <p><strong>Cena:</strong> {{ sok.cena | percent}} zł</p>
   <p><strong>Data produkcji:</strong> {{ sok.dataProdukcji | date:'MM-dd-yyyy' }}</p>
-  <p><strong>Typ soku:</strong> {{ sok.typSoku }}</p>
-  <p><strong>Producent:</strong> {{ sok.producent }}</p>
+  <p><strong>Zad 7:</strong> {{ sok | sokiFormat:(sok.id % 2 === 0) }}</p>
   <hr>
 </div>
