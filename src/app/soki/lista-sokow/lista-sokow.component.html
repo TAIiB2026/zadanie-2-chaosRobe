@@ -2,7 +2,7 @@
 
 <div *ngFor="let sok of kartonySoku" class="karta">
   <p><strong>ID:</strong> {{ sok.id }}</p>
-  <p><strong>Cena:</strong> {{ sok.cena | percent}} zł</p>
+  <p><strong>Cena:</strong> {{ sok.cena | percent}}</p>
   <p><strong>Data produkcji:</strong> {{ sok.dataProdukcji | date:'MM-dd-yyyy' }}</p>
   <p><strong>Zad 7:</strong> {{ sok | sokiFormat:(sok.id % 2 === 0) }}</p>
   <hr>
